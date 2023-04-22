@@ -352,32 +352,32 @@ async def customize():
             chat_id, "**Auto Customisation** Started on @Botfather"
         )
         await asyncio.sleep(1)
-        await ultroid_bot.send_message("botfather", "/cancel")
+        await ultroid_bot.send_message("kanha_gar", "/cancel")
         await asyncio.sleep(1)
-        await ultroid_bot.send_message("botfather", "/setuserpic")
+        await ultroid_bot.send_message("kanha_gar", "/setuserpic")
         await asyncio.sleep(1)
-        isdone = (await ultroid_bot.get_messages("botfather", limit=1))[0].text
+        isdone = (await ultroid_bot.get_messages("kanha_gar", limit=1))[0].text
         if isdone.startswith("Invalid bot"):
             LOGS.info("Error while trying to customise assistant, skipping...")
             return
-        await ultroid_bot.send_message("botfather", UL)
+        await ultroid_bot.send_message("kanha_gar", UL)
         await asyncio.sleep(1)
-        await ultroid_bot.send_file("botfather", file)
+        await ultroid_bot.send_file("kanha_gar", file)
         await asyncio.sleep(2)
-        await ultroid_bot.send_message("botfather", "/setabouttext")
+        await ultroid_bot.send_message("kanha_gar", "/setabouttext")
         await asyncio.sleep(1)
-        await ultroid_bot.send_message("botfather", UL)
+        await ultroid_bot.send_message("kanha_gar", UL)
         await asyncio.sleep(1)
         await ultroid_bot.send_message(
-            "botfather", f"✨ Hello ✨!! I'm Assistant Bot of {sir}"
+            "Kanha_gar", f"✨ Hello ✨!! I'm Assistant Bot of {sir}"
         )
         await asyncio.sleep(2)
-        await ultroid_bot.send_message("botfather", "/setdescription")
+        await ultroid_bot.send_message("kanha_gar", "/setdescription")
         await asyncio.sleep(1)
-        await ultroid_bot.send_message("botfather", UL)
+        await ultroid_bot.send_message("kanha_gar", UL)
         await asyncio.sleep(1)
         await ultroid_bot.send_message(
-            "botfather",
+            "kanha_gar",
             f"✨ Powerful Ultroid Assistant Bot ✨\n✨ Master ~ {sir} ✨\n\n✨ Powered By ~ @TeamUltroid ✨",
         )
         await asyncio.sleep(2)
